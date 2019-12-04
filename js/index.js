@@ -28,6 +28,9 @@ const navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach(link => {
     link.addEventListener('mouseover', () => {        
         link.style.color = 'white';
+        
+                
+
     });
 });
 // #5
@@ -41,6 +44,7 @@ const letsGo = document.querySelectorAll("h2");
 console.log(letsGo);
 document.addEventListener('wheel', (zoom)=>{
     letsGo[1].style.transform= "scale(1.5)";
+    event.preventDefault()
 });
 // #7
 const img = document.querySelector('img');
@@ -71,4 +75,5 @@ const button = document.querySelector('.btn');
 
 button.addEventListener('mouseover', function(event) {
     event.target.style.backgroundColor = 'purple';
+    
 })
